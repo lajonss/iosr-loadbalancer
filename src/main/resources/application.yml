@@ -1,0 +1,12 @@
+zuul:
+  prefix: /api
+
+server:
+  port: 8765
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://eureka:8761/eureka}
+
+management.security.enabled: false
